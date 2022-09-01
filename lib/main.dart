@@ -13,6 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: 'Ubuntu'
+      ),
       title: 'SB Coffe',
       debugShowCheckedModeBanner: false,
       initialRoute: LandingScreen.namedRoute,
