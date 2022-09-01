@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_coffe/screen/home_screen.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({Key? key}) : super(key: key);
@@ -64,9 +65,7 @@ class LandingScreen extends StatelessWidget {
                       height: 50,
                     ),
                     InkWell(
-                      onTap: () {
-                        /// on tap
-                      },
+                      onTap: () => Navigator.of(context).pushNamed(HomeScreen.namedRoute),
                       child: Container(
                         height: 64,
                         width: sizeWidth * 0.8,
